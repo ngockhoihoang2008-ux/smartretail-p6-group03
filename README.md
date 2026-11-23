@@ -36,19 +36,20 @@ g++ -std=c++17 -Wall -Wextra src/main.cpp -o bin/p6
 ## 6. Task assignment table
 | ID | Task | Function/file | Assignee | Reviewer | Flowchart | PR |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| T01 | Repo skeleton, PR template & README | `.gitignore`, `pull_request_template.md`, `README.md` | Khôi | Bảo | not needed | #1 |
-| T02 | Nạp dữ liệu CSV & khai báo `struct` | `data/`, `struct DayRecord`, `struct Alert` | Hiền | Khôi | yes | |
-| T03 | Đọc `daily_store.csv`, lọc dòng lỗi & cảnh báo `cerr` | `loadDailyStore()` | Khôi | Bảo | yes | |
-| T04 | Lọc theo `store_id` & tìm kiếm nhị phân đệ quy | `filterByStore()`, `findDay()` | Khôi | Long | yes | |
-| T05 | Tìm ngày liền trước & tính KPI (`Conversion`, `Target`) | `previousDay()`, `computeKPI()` | Long | Khôi | yes | |
-| T06 | Hàm lõi: Kiểm tra 3 luật cảnh báo (`if` ngưỡng) | `checkInventory()`, `checkConversion()`, `checkTarget()` | Hiền | Long | yes | |
-| T07 | Hàm lõi: Đánh giá ngày & Bubble Sort ổn định cảnh báo | `evaluateDay()`, `sortAlerts()` | Bảo | Khôi | yes | |
+| T01 | Repo skeleton, PR template & README | `.gitignore`, `pull_request_template.md`, `README.md` | Khôi | Bảo | not needed | #1, #2 |
+| T02 | Nạp bộ dữ liệu CSV chuẩn vào thư mục dự án | `data/sample/`, `data/full/`, `data/edge/` | Hiền | Khôi | not needed | |
+| T03 | Khai báo cấu trúc dữ liệu (`struct`) & hàm khởi tạo | `struct DayRecord`, `struct Alert` trong `src/main.cpp` | Hiền | Long | yes | |
+| T04 | Đọc `daily_store.csv`, lọc dòng lỗi & cảnh báo `cerr` | `loadDailyStore()` | Khôi | Bảo | yes | |
+| T05 | Lọc theo `store_id` & tìm kiếm nhị phân đệ quy | `filterByStore()`, `findDay()` | Khôi | Long | yes | |
+| T06 | **Hàm lõi:** Kiểm tra 3 luật cảnh báo, đánh giá ngày & Bubble Sort ổn định | `checkInventory()`, `checkConversion()`, `checkTarget()`, `evaluateDay()`, `sortAlerts()` | Bảo | Khôi | yes | |
+| T07 | Tìm ngày liền trước & tính KPI (`Conversion`, `Target`) | `previousDay()`, `computeKPI()` | Long | Khôi | yes | |
 | T08 | In báo cáo ngày (`DAILY STORE REPORT`, `ALERTS`, `ACTIONS`) | `printReport()` | Long | Bảo | yes | |
 | T09 | In bảng xu hướng mọi ngày (`TREND`) & thống kê (`SUMMARY`) | `printTrend()`, `printSummary()` | Bảo | Hiền | yes | |
 | T10 | Ghép luồng chính `main()` & kiểm tra tham số dòng lệnh | `main()` trong `src/main.cpp` | Khôi | Bảo | yes | |
 | T11 | Bộ kiểm thử bắt buộc `TC01–TC07` & dữ liệu `expected/` | `tests/test_cases.md`, `tests/expected/` | Long | Hiền | not needed | |
 | T12 | Tài liệu kiến trúc tổng thể, sơ đồ hàm & thuật toán | `docs/architecture.md` | Bảo | Khôi | not needed | |
 | T13 | Thiết kế slide thuyết trình nhóm (tối đa 10 trang) | `docs/slides.pdf` | Hiền | Khôi | not needed | |
+
 
 ## 7. Khai báo AI và nguồn tham khảo
 - None (nhóm sẽ cập nhật chi tiết công cụ AI và phần code gợi ý nếu có sử dụng trong từng PR).
